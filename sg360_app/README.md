@@ -20,6 +20,32 @@ SG360 is an open-source malware detection application for Android that enhances 
 2. Enable installation from unknown sources in your device settings
 3. Open the downloaded APK and follow the installation prompts
 
+### Setting Up the Development Environment
+If you're setting up this project for the first time, ensure the Android SDK is configured correctly:
+
+1. **Verify Android SDK Path**
+    - The project requires a valid Android SDK path.
+    - If you encounter an SDK location error, create a `local.properties` file in the project's root directory and add:
+      ```
+      sdk.dir=C:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+      ```
+    - Replace `YourUsername` with your actual system username.
+
+2. **Set ANDROID_HOME (Optional, but Recommended)**
+    - Add `ANDROID_HOME` as an environment variable pointing to your SDK path.
+    - Update the system `Path` variable to include:
+      ```
+      %ANDROID_HOME%\platform-tools
+      %ANDROID_HOME%\emulator
+      %ANDROID_HOME%\tools
+      %ANDROID_HOME%\tools\bin
+      ```
+
+3. **Restart Android Studio**
+    - Close and reopen Android Studio.
+    - Run `File` → `Invalidate Caches / Restart` → `Invalidate and Restart`.
+
+
 ## 📋 Required Permissions
 
 SG360 is designed to be minimally invasive:
